@@ -1,0 +1,13 @@
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/html/certiustechlite;
+        index index.html index.htm index.nginx-debian.html;
+
+	server_name 178.128.146.126 certiustech.com www.certiustech.com certiustech.com.ar certiustech.com.ar;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
